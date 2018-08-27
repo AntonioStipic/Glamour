@@ -2235,7 +2235,7 @@
 .c-hov-white:hover {color: white;}
 
 /* ------------------------------------ */
-.tt-up {text-transform: uppercase;}
+.tt-up {text-transform: uppercas;}
 
 /* ------------------------------------ */
 .t-center {text-align: center !important;}
@@ -3569,6 +3569,10 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 
 .size38 {
 	max-width: 190px;
+}
+
+.f-s-25 {
+    font-size: 18px;
 }
 
 /*[ Background Color ]

@@ -27,7 +27,7 @@
                             </li>
 
                             <li>
-                                <a href="gallery.html">Planer Vjenčanja</a>
+                                <a href="/planer">Planer Vjenčanja</a>
                             </li>
 
                             <li>
@@ -76,7 +76,7 @@
         </li>
 
         <li class="t-center m-b-13">
-            <a href="about.html" class="txt19">Planer Vjenčanja</a>
+            <a href="/planer" class="txt19">Planer Vjenčanja</a>
         </li>
 
         <li class="t-center m-b-13">

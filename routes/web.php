@@ -14,5 +14,6 @@
 Route::get("/", "PageController@index");
 Route::get("/dvorana", "PageController@dvorana");
 Route::get("/galerija", "PageController@galerija");
+Route::get("/planer", "PageController@planer");
 
 Route::post("/galerija", "GalerijaController@getImg");

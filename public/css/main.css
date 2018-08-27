@@ -171,12 +171,12 @@ textarea {
 }
 
 textarea:focus, input:focus {
-  border-color: transparent !important;
-  box-shadow: 0 0 0px 2px #ec1d25;
-  -moz-box-shadow: 0 0 0px 2px #ec1d25;
-  -webkit-box-shadow: 0 0 0px 2px #ec1d25;
-  -o-box-shadow: 0 0 0px 2px #ec1d25;
-  -ms-box-shadow: 0 0 0px 2px #ec1d25;
+  /*border-color: transparent !important;*/
+  /*box-shadow: 0 0 0px 2px #ec1d25;*/
+  /*-moz-box-shadow: 0 0 0px 2px #ec1d25;*/
+  /*-webkit-box-shadow: 0 0 0px 2px #ec1d25;*/
+  /*-o-box-shadow: 0 0 0px 2px #ec1d25;*/
+  /*-ms-box-shadow: 0 0 0px 2px #ec1d25;*/
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
@@ -1750,3 +1750,232 @@ body {padding-right: 0px !important;}
 
 #lightboxOverlay { position: fixed !important; top: 0; left: 0; height: 100% !important; width: 100% !important; }
 #lightbox { position: fixed !important; top: 50% !important; transform: translateY(-50%); }
+
+
+.planer {
+  margin-top: 60px;
+}
+
+.orderNumber {
+  font-size: 25px;
+  color: white;
+  background: darkred;
+
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
+}
+
+.planerTitle {
+  font-size: 25px;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  /*opacity: 0.7; !* Set transparency (for mouse-over effects on hover) *!*/
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+
+  border-radius: 15px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+
+  border-radius: 15px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+
+  border-radius: 15px;
+}
+
+
+
+
+.slideTable {
+  width: 90%;
+  margin-left: 5%;
+
+}
+
+.container {
+  overflow: hidden;
+}
+
+.range-labels {
+  margin: 18px -41px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.range-labels li {
+  position: relative;
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+
+  /*border: 1px solid black;*/
+}
+.range-labels::before {
+     position: absolute;
+     top: -25px;
+     right: 0;
+     left: 0;
+     content: "";
+     margin: 0 auto;
+     width: 9px;
+     height: 9px;
+     background: #b2b2b2;
+     border-radius: 50%;
+}
+
+.slider1 {
+  text-align: left !important;
+}
+
+.slider2 {
+  text-align: left !important;
+  padding-left: 3.6%;
+}
+
+.slider4 {
+  text-align: right !important;
+  padding-right: 3.6%;
+}
+
+.slider5 {
+  text-align: right !important;
+}
+
+@media (max-width: 768px) {
+  .slider1 {
+    padding-left: 15px;
+  }
+
+  .slider5 {
+    padding-right: 15px;
+  }
+}
+
+.planer2 {
+  margin-top: 150px;
+}
+
+.kalendar {
+  width: 35%;
+  background-color: white;
+  margin-left: 5%;
+  padding: 15px;
+
+  border-radius: 15px;
+
+  min-width: 400px;
+}
+
+.planerGodina, .planerMjesec, .planerDan {
+  margin-left: 100px !important;
+
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 5px;
+
+  width: 150px;
+}
+
+@media (max-width: 992px) {
+  .kalendar {
+    width: 90%;
+    min-width: 0;
+
+  }
+
+  .planerGodina, .planerMjesec, .planerDan {
+    margin-left: 10vw !important;
+
+    width: 80%;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.planerBlock {
+  background-color: white;
+  display: inline-block;
+
+  width: 180px;
+  /*height: 150px;*/
+
+  text-align: center;
+
+  padding: 15px;
+  border-radius: 15px;
+
+  border: 1px solid #1b6d85;
+
+  transition: background-color 0.2s linear;
+
+  margin: 5px;
+}
+
+.planerBlock:hover {
+  background-color: lightgrey;
+  /*border: 2px solid #1b6d85;*/
+
+  cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+  .planerBlock {
+    margin-left: calc(50vw - 90px);
+  }
+}
+
+.planerClicked {
+  background-color: #A7A7A7;
+
+  color: whitesmoke;
+
+  border-color: #721c24;
+}

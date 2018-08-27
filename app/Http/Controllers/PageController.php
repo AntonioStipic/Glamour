@@ -40,4 +40,13 @@ class PageController extends Controller {
         return view("page.galerija")->with($data);
     }
 
+    public function planer() {
+
+        $data = array(
+            "title" => "Planer"
+        );
+
+        return view("page.planer")->with($data);
+    }
+
 }

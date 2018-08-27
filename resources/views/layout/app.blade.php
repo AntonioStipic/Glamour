@@ -115,5 +115,9 @@
         <script src="{{asset("js/galerija.js")}}"></script>
         <script src="{{asset("js/lazyload.js")}}"></script>
     @endif
+
+    @if ($title == "Planer")
+        <script src="{{asset("js/planer.js")}}"></script>
+    @endif
 </body>
 </html>
