@@ -4,7 +4,7 @@
 
     <section class="section-video parallax100" style="background-image: url(images/img/background/dvorana.jpeg);">
         <div class="content-video t-center p-t-225 p-b-250">
-			<span class="tit2 p-l-15 p-r-15 c-whitesmoke">
+			<span class="tit2 p-l-15 p-r-15 c-whitesmoke outline">
 				Pregled svečane dvorane
 			</span>
 

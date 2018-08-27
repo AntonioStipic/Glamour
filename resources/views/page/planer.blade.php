@@ -3,7 +3,7 @@
 @section("content")
 
     <section class="flex-c-m p-t-160 p-b-80 p-l-15 p-r-15 bg-title-page" style="background-image: url(images/img/background/galerija2.jpeg);">
-        <h2 class="tit2 t-center c-whitesmoke fs-35">
+        <h2 class="tit2 t-center c-whitesmoke fs-35 outline">
             Planer Vjenčanja
         </h2>
     </section>
@@ -153,16 +153,6 @@
                     </div>
 
                     <div class="col-md-6">
-                        <span class="txt9">Naslov poruke</span>
-
-                        <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="naslov" placeholder="Naslov">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
                         <span class="txt9">E-mail</span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -171,23 +161,36 @@
                     </div>
                 </div>
 
-                <!-- Phone -->
-                <span class="txt9">
-									Phone
-								</span>
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="txt9">Naslov poruke</span>
 
-                <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                    <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
+                        <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="naslov" placeholder="Naslov">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <span class="txt9">Broj mobitela</span>
+
+                        <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="mobitel" placeholder="Broj mobitela">
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Email -->
-                <span class="txt9">
-									Email
-								</span>
 
-                <div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                    <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <span class="txt9">Tekst poruke</span>
+
+                        <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23 textAreaDiv">
+                            <textarea class="bo-rad-10 sizefull txt10 p-l-20 inputTextArea" type="text" name="tekst" placeholder="Tekst poruke"></textarea>
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
 

@@ -168,6 +168,7 @@ input {
 
 textarea {
   outline: none;
+  border: none !important;
 }
 
 textarea:focus, input:focus {
@@ -1978,4 +1979,17 @@ body {padding-right: 0px !important;}
   color: whitesmoke;
 
   border-color: #721c24;
+}
+
+.inputTextArea {
+  /*padding-top: 10px;*/
+  height: 150px;
+
+
+}
+
+.textAreaDiv {
+  height: auto !important;
+
+  background: white;
 }

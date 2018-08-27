@@ -3,7 +3,7 @@
 @section("content")
 
     <section class="flex-c-m p-t-160 p-b-80 p-l-15 p-r-15 bg-title-page" style="background-image: url(images/img/background/galerija2.jpeg);">
-        <h2 class="tit2 t-center c-whitesmoke fs-35">
+        <h2 class="tit2 t-center c-whitesmoke fs-35 outline">
             Galerija
         </h2>
     </section>
