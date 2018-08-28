@@ -21,13 +21,9 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
     <!--===============================================================================================-->
@@ -81,7 +77,7 @@
     <div id="dropDownSelect1"></div>
 
 
-    <script src="{{asset("js/app.js")}}"></script>
+{{--    <script src="{{asset("js/app.js")}}"></script>--}}
     <!--===============================================================================================-->
     <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
@@ -92,8 +88,6 @@
     <!--===============================================================================================-->
     <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
-    <script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
-    <script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
     <!--===============================================================================================-->
     <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/slick-custom.js"></script>
@@ -105,7 +99,6 @@
         $('.parallax100').parallax100();
     </script>
     <!--===============================================================================================-->
-    <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
     <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
     <!--===============================================================================================-->

@@ -54,8 +54,8 @@
                         <tr>
                             <td><label class="txt4 f-s-25">Godina: </label></td>
                             <td>
-                                <select name="birth-year" class="planerGodina">
-                                    <option value="2018" selected>2018</option>
+                                <select class="planerGodina" id="planerGodina">
+                                    <option value="2018">2018</option>
                                     <option value="2019">2019</option>
                                     <option value="2020">2020</option>
                                     <option value="2021">2021</option>
@@ -66,7 +66,7 @@
                         <tr>
                             <td><label class="txt4 f-s-25">Mjesec: </label></td>
                             <td>
-                                <select name="birth-year" class="planerMjesec">
+                                <select class="planerMjesec" id="planerMjesec">
                                     <option value="Siječanj">Siječanj</option>
                                     <option value="Veljača">Veljača</option>
                                     <option value="Ožujak">Ožujak</option>
@@ -85,7 +85,7 @@
                         <tr>
                             <td><label class="txt4 f-s-25">Dan: </label></td>
                             <td>
-                                <select name="birth-year" class="planerDan">
+                                <select class="planerDan" id="planerDan">
                                     <option value="Petak">Petak</option>
                                     <option value="Subota">Subota</option>
                                 </select>
@@ -148,7 +148,7 @@
                         <span class="txt9">Ime i prezime</span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="ime" placeholder="Ime i prezime">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="ime" placeholder="Ime i prezime" id="formIme">
                         </div>
                     </div>
 
@@ -156,7 +156,7 @@
                         <span class="txt9">E-mail</span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="email" placeholder="E-mail">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="email" placeholder="E-mail" id="formEmail">
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                         <span class="txt9">Naslov poruke</span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="naslov" placeholder="Naslov">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="naslov" placeholder="Naslov" id="formNaslov">
                         </div>
                     </div>
 
@@ -174,7 +174,7 @@
                         <span class="txt9">Broj mobitela</span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="mobitel" placeholder="Broj mobitela">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="mobitel" placeholder="Broj mobitela" id="formMobitel">
                         </div>
                     </div>
                 </div>
@@ -186,14 +186,25 @@
                         <span class="txt9">Tekst poruke</span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23 textAreaDiv">
-                            <textarea class="bo-rad-10 sizefull txt10 p-l-20 inputTextArea" type="text" name="tekst" placeholder="Tekst poruke"></textarea>
+                            <textarea class="bo-rad-10 sizefull txt10 p-l-20 inputTextArea" type="text" name="tekst" placeholder="Tekst poruke" id="formTekst"></textarea>
                         </div>
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="submit" class="btn2 flex-c-m size18 txt10 trans-0-4 m-10 float-r" id="clearPlaner">
+                            Obriši sve
+                        </button>
+                    </div>
 
+                    <div class="col-md-6">
+                        <button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10 float-l" id="sendPlaner">
+                            Pošaljite
+                        </button>
+                    </div>
+                </div>
             </div>
-
 
         </div>
     </section>

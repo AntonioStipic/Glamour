@@ -42,84 +42,39 @@
     });
 
 
-    /*[ Select ]
-    ===========================================================*/
-    $(".selection-1").select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $('#dropDownSelect1')
-    });
-
-    /*[ Daterangepicker ]
-    ===========================================================*/
-    $('.my-calendar').daterangepicker({
-        "singleDatePicker": true,
-        "showDropdowns": true,
-        locale: {
-            format: 'DD/MM/YYYY'
-        },
-    });
-
-    var myCalendar = $('.my-calendar');
-    var isClick = 0;
-
-    $(window).on('click',function(){ 
-        isClick = 0;
-    });
-
-    $(myCalendar).on('apply.daterangepicker',function(){ 
-        isClick = 0;
-    });
-
-    $('.btn-calendar').on('click',function(e){ 
-        e.stopPropagation();
-
-        if(isClick == 1) isClick = 0;   
-        else if(isClick == 0) isClick = 1;
-
-        if (isClick == 1) {
-            myCalendar.focus();
-        }
-    });
-
-    $(myCalendar).on('click',function(e){ 
-        e.stopPropagation();
-        isClick = 1;
-    });
-
-    $('.daterangepicker').on('click',function(e){ 
-        e.stopPropagation();
-    });
-
-
     /*[ Play video 01]
     ===========================================================*/
     var srcOld = $('.video-mo-01').children('iframe').attr('src');
 
     $('[data-target="#modal-video-01"]').on('click',function(){
-        if (srcOld.indexOf("autoplay=0") > -1) {
-            srcOld = srcOld.replace("autoplay=0", "autoplay=1");
-        } else {
-            srcOld += "&autoplay=1";
-        }
 
-        $('.video-mo-01').children('iframe')[0].src = srcOld;
+        console.log("Da ovako je pozvan")
+        // $(".video-mo-01").css("z-index", "1251");
+        //
+        // if (srcOld.indexOf("autoplay=0") > -1) {
+        //     srcOld = srcOld.replace("autoplay=0", "autoplay=1");
+        // } else {
+        //     srcOld += "&autoplay=1";
+        // }
+        //
+        // $('.video-mo-01').children('iframe')[0].src = srcOld;
 
         setTimeout(function(){
             $('.video-mo-01').css('opacity','1');
-        },300);      
+        }, 300);
     });
 
-    $('[data-dismiss="modal"]').on('click',function(){
-
-        console.log(srcOld);
-
-        if (srcOld.indexOf("autoplay=1") > -1) {
-            srcOld = srcOld.replace("autoplay=1", "autoplay=0");
-        }
-        console.log(srcOld);
-        $('.video-mo-01').children('iframe')[0].src = srcOld;
-        $('.video-mo-01').css('opacity','0');
-    });
+    // $('[data-dismiss="modal"]').on('click',function(){
+    //
+    //     console.log(srcOld);
+    //
+    //     if (srcOld.indexOf("autoplay=1") > -1) {
+    //         srcOld = srcOld.replace("autoplay=1", "autoplay=0");
+    //     }
+    //     console.log(srcOld);
+    //     $('.video-mo-01').children('iframe')[0].src = srcOld;
+    //     $('.video-mo-01').css('opacity','0');
+    // });
     
 
     /*[ Fixed Header ]
@@ -164,47 +119,6 @@
         $(sidebar).removeClass('show-sidebar');
         $(ovlSideBar).removeClass('show-overlay-sidebar');
     })
-
-
-    /*[ Isotope ]
-    ===========================================================*/
-    var $topeContainer = $('.isotope-grid');
-    var $filter = $('.filter-tope-group');
-
-    // filter items on button click
-    $filter.each(function () {
-        $filter.on('click', 'button', function () {
-            var filterValue = $(this).attr('data-filter');
-            $topeContainer.isotope({filter: filterValue});
-        });
-        
-    });
-
-    // init Isotope
-    $(window).on('load', function () {
-        var $grid = $topeContainer.each(function () {
-            $(this).isotope({
-                itemSelector: '.isotope-item',
-                percentPosition: true,
-                animationEngine : 'best-available',
-                masonry: {
-                    columnWidth: '.isotope-item'
-                }
-            });
-        });
-    });
-
-    var labelGallerys = $('.label-gallery');
-
-    $(labelGallerys).each(function(){
-        $(this).on('click', function(){
-            for(var i=0; i<labelGallerys.length; i++) {
-                $(labelGallerys[i]).removeClass('is-actived');
-            }
-
-            $(this).addClass('is-actived');
-        });
-    });
 
     
 

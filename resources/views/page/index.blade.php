@@ -279,7 +279,7 @@
 
             <h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
                 Pato Place
-            </h3>
+            </h3>np
         </div>
 
         <div class="content-intro bg-white p-t-77 p-b-133">

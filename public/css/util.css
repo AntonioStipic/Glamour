@@ -2265,6 +2265,7 @@
 .lh-2-8 {line-height: 2.8;}
 .lh-2-9 {line-height: 2.9;}
 
+
 /*[ SHAPE ]
 ///////////////////////////////////////////////////////////
 */
@@ -2294,8 +2295,8 @@
 /*[ float ]
 -----------------------------------------------------------
 */
-.float-l {float: left;}
-.float-r {float: right;}
+.float-l {float: left !important;}
+.float-r {float: right !important;}
 
 
 /*[ Width & Height ]

@@ -17,3 +17,4 @@ Route::get("/galerija", "PageController@galerija");
 Route::get("/planer", "PageController@planer");
 
 Route::post("/galerija", "GalerijaController@getImg");
+Route::post("/planer", "PlanerController@submitPlaner");

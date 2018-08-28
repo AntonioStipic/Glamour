@@ -1354,7 +1354,7 @@ body {padding-right: 0px !important;}
 
 #modal-video-01 {
   background-color: rgba(0,0,0,0.8);
-  z-index: 1250;
+  z-index: 1240;
   
 }
 
@@ -1372,6 +1372,8 @@ body {padding-right: 0px !important;}
   justify-content: center;
   align-items: center;
   position: relative;
+
+  z-index: 100;
 }
 
 .wrap-video-mo-01 {
@@ -1379,6 +1381,8 @@ body {padding-right: 0px !important;}
   height: auto;
   position: relative;
   margin: 15px;
+
+  z-index: 9980 !important;
 }
 
 .video-mo-01 {
@@ -1411,7 +1415,7 @@ body {padding-right: 0px !important;}
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index: 1250;
+  /*z-index: 1250;*/
   width: 60px;
   height: 60px;
   top: 0;
@@ -1992,4 +1996,8 @@ body {padding-right: 0px !important;}
   height: auto !important;
 
   background: white;
+}
+
+.planerBlock label {
+  cursor: pointer !important;
 }
