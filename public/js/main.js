@@ -4,26 +4,26 @@
 
     /*[ Load page ]
     ===========================================================*/
-    $(".animsition").animsition({
-        inClass: 'fade-in',
-        outClass: 'fade-out',
-        inDuration: 1500,
-        outDuration: 800,
-        linkElement: '.animsition-link',
-        loading: true,
-        loadingParentElement: 'html',
-        loadingClass: 'animsition-loading-1',
-        loadingInner: '<img src="images/icons/loader.gif">',
-        // loadingInner: '<div class="cp-spinner cp-meter"></div>',
-        timeout: false,
-        timeoutCountdown: 5000,
-        onLoadEvent: true,
-        browser: [ 'animation-duration', '-webkit-animation-duration'],
-        overlay : false,
-        overlayClass : 'animsition-overlay-slide',
-        overlayParentElement : 'html',
-        transition: function(url){ window.location.href = url; }
-    });
+    // $(".animsition").animsition({
+    //     inClass: 'fade-in',
+    //     outClass: 'fade-out',
+    //     inDuration: 1500,
+    //     outDuration: 800,
+    //     linkElement: '.animsition-link',
+    //     loading: true,
+    //     loadingParentElement: 'html',
+    //     loadingClass: 'animsition-loading-1',
+    //     loadingInner: '<img src="images/icons/loader.gif">',
+    //     // loadingInner: '<div class="cp-spinner cp-meter"></div>',
+    //     timeout: false,
+    //     timeoutCountdown: 5000,
+    //     onLoadEvent: true,
+    //     browser: [ 'animation-duration', '-webkit-animation-duration'],
+    //     overlay : false,
+    //     overlayClass : 'animsition-overlay-slide',
+    //     overlayParentElement : 'html',
+    //     transition: function(url){ window.location.href = url; }
+    // });
     
     /*[ Back to top ]
     ===========================================================*/
@@ -44,37 +44,50 @@
 
     /*[ Play video 01]
     ===========================================================*/
-    var srcOld = $('.video-mo-01').children('iframe').attr('src');
+    var videoSrc = $("#videoIframe").attr("src");
 
-    $('[data-target="#modal-video-01"]').on('click',function(){
+    $("#youtubePlay").on("click", function () {
+        // console.log("Called video");
 
-        console.log("Da ovako je pozvan")
-        // $(".video-mo-01").css("z-index", "1251");
-        //
-        // if (srcOld.indexOf("autoplay=0") > -1) {
-        //     srcOld = srcOld.replace("autoplay=0", "autoplay=1");
-        // } else {
-        //     srcOld += "&autoplay=1";
-        // }
-        //
-        // $('.video-mo-01').children('iframe')[0].src = srcOld;
+        if (videoSrc.indexOf("autoplay=0") > -1) {
+            videoSrc = videoSrc.replace("autoplay=0", "autoplay=1");
+        } else {
+            videoSrc += "&autoplay=1";
+        }
 
-        setTimeout(function(){
-            $('.video-mo-01').css('opacity','1');
-        }, 300);
+        $("#videoIframe").attr("src", videoSrc);
+
+        $(".videoModal").css("z-index", "15000");
+        $(".videoModal").css("opacity", "1");
     });
 
-    // $('[data-dismiss="modal"]').on('click',function(){
-    //
-    //     console.log(srcOld);
-    //
-    //     if (srcOld.indexOf("autoplay=1") > -1) {
-    //         srcOld = srcOld.replace("autoplay=1", "autoplay=0");
-    //     }
-    //     console.log(srcOld);
-    //     $('.video-mo-01').children('iframe')[0].src = srcOld;
-    //     $('.video-mo-01').css('opacity','0');
-    // });
+    $(".videoModalOverlay").on("click", function () {
+
+        if (videoSrc.indexOf("autoplay=1") > -1) {
+            videoSrc = videoSrc.replace("autoplay=1", "autoplay=0");
+        } else {
+            videoSrc += "&autoplay=0";
+        }
+
+        $("#videoIframe").attr("src", videoSrc);
+
+        $(".videoModal").css("z-index", "-50");
+        $(".videoModal").css("opacity", "0");
+    });
+
+    $(".videoModalOverlayX").on("click", function () {
+
+        if (videoSrc.indexOf("autoplay=1") > -1) {
+            videoSrc = videoSrc.replace("autoplay=1", "autoplay=0");
+        } else {
+            videoSrc += "&autoplay=0";
+        }
+
+        $(".videoModal").css("z-index", "-50");
+        $("#videoIframe").attr("src", videoSrc);
+
+        $(".videoModal").css("opacity", "0");
+    });
     
 
     /*[ Fixed Header ]

@@ -13,15 +13,13 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/img/favicon.jpg"/>
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
     <!--===============================================================================================-->
@@ -34,12 +32,9 @@
     <!--===============================================================================================-->
 
 </head>
-<body class="animsition">
+<body> <!-- class="animsition" -->
 
     @include("inc.navbar")
-    @if ($title == "Dvorana")
-        @include("inc.dvoranaInc")
-    @endif
 
     <div class="bodyContainer" id="app">
         @yield("content")
@@ -111,6 +106,10 @@
 
     @if ($title == "Planer")
         <script src="{{asset("js/planer.js")}}"></script>
+    @endif
+
+    @if ($title == "Dvorana")
+        @include("inc.dvoranaInc")
     @endif
 </body>
 </html>

@@ -99,7 +99,7 @@
 
             <div class="planer3">
                 <span class="orderNumber">3.</span> <span class="planerTitle">Odaberite ostale dodatke</span><br>
-                <span class="m-l-50 block">*Napomena - Informacije iz upitnika ne služe kao rezervacija termina ili svečane dvorane, već isključivo služe za svrhu pripreme za prvi sastanak.</span>
+                <span class="m-l-50 block">Označite potrebne elemente, kako bismo se što bolje pripremili za naš prvi sastanak.</span>
                 <br><br>
 
                 <span class="dis-inline-block">
@@ -208,4 +208,22 @@
 
         </div>
     </section>
+
+
+    <div class="alert alert-primary bottomFixed" role="alert" id="loadingAlert" style="display:none;">
+        <img src="{{asset("vendor/lightbox2/images/loading.gif")}}" width="20"> Zahtjev se obrađuje... Molimo vas pričekajte.
+    </div>
+
+    <div class="alert alert-success bottomFixed" role="alert" id="successAlert" style="display:none;">
+        Upitnik je uspješno poslan!
+    </div>
+
+    <div class="alert alert-danger bottomFixed" role="alert" id="errorAlert" style="display:none;">
+        Molimo vas popunite sva polja!
+    </div>
+
+    <div class="alert alert-danger bottomFixed" role="alert" id="error2Alert" style="display:none;">
+        Dogodila se greška. Molimo vas pokušajte kasnije.
+    </div>
+
 @endsection

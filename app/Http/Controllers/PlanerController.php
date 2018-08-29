@@ -26,7 +26,7 @@ class PlanerController extends Controller {
             $data["brojUzvanika"] = "550";
         }
 
-        print_r($data);
+//        print_r($data);
 
         if (isset($data["dodaci"])) {
             $dodaci = implode(", ", $data["dodaci"]);

@@ -65,15 +65,12 @@
                                     </h4>
 
                                     <p class="t-left">
-                                        Dvorana se nalazi u <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Glamour+sve%C4%8Dana+dvorana/@45.4920841,18.0989821,17z/data=!3m1!4b1!4m5!3m4!1s0x475d0db5059152e1:0x7a0ce93ab9d93884!8m2!3d45.4920804!4d18.1011708">ulici Braće Radića 57, Našice</a>
+                                        Dvorana se nalazi u ulici Braće Radića 57, Našice
                                     </p><br>
 
                                     <div class="container">
                                         <div class="map ">
-                                            {{--<div class="contact-map size37" id="google_map" data-map-x="45.492104" data-map-y="18.101176" data-pin="images/icons/point.png" data-scrollwhell="0" data-draggable="1"></div>--}}
-
-                                            <div id="mapid" class="contact-map size37"></div>
-
+                                            <div class="contact-map size37" id="google_map" data-map-x="45.492104" data-map-y="18.101176" data-pin="images/icons/point.png" data-scrollwhell="0" data-draggable="1"></div>
                                         </div>
                                     </div>
 
@@ -88,16 +85,5 @@
             <!--<div class="wrap-slick2-dots"></div>-->
         </div>
     </section>
-
-    <div class="videoModal">
-        <div class="videoModalOverlay">
-        </div>
-
-        <div class="videoModalVideo">
-            <div class="videoModalOverlayX">X</div>
-
-            <iframe src="https://www.youtube.com/embed/92k1_ByaNqg?rel=0&amp;showinfo=0" allow="autoplay; fullscreen" id="videoIframe"></iframe>
-        </div>
-    </div>
 @endsection
 

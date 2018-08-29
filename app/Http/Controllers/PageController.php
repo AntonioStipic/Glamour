@@ -49,4 +49,18 @@ class PageController extends Controller {
         return view("page.planer")->with($data);
     }
 
+    public function blog() {
+        $data = array(
+            "title" => "Blog"
+        );
+
+        return view("page.blog")->with($data);
+    }
+
+    public function blogId($id) {
+
+        echo $id;
+
+    }
+
 }

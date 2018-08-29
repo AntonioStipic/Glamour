@@ -53,6 +53,8 @@ $.ajaxSetup({
 
 $("#sendPlaner").on("click", function () {
 
+    $("#loadingAlert").fadeIn();
+
     let brojUzvanika = $("#brojUzvanika").val();
     let godinaVjencanja = $("#planerGodina").val();
     let mjesecVjencanja = $("#planerMjesec").val();
@@ -66,22 +68,45 @@ $("#sendPlaner").on("click", function () {
     let formNaslov = $("#formNaslov").val();
     let formTekst = $("#formTekst").val();
 
-    let data = {"brojUzvanika": brojUzvanika, "godinaVjencanja": godinaVjencanja, "mjesecVjencanja": mjesecVjencanja, "danVjencanja": danVjencanja, "dodaci": dodaci, "ime": formIme, "email": formEmail, "mobitel": formMobitel, "naslov": formNaslov, "tekst": formTekst};
+    if (formIme == "" || formEmail == "" || formMobitel == "" || formNaslov == "" || formTekst == "") {
+        $("#loadingAlert").hide();
+        $("#errorAlert").fadeIn();
 
-    // console.log(data);
+        setTimeout(function () {
+            $("#errorAlert").fadeOut();
+        }, 5000);
+    } else {
+        let data = {"brojUzvanika": brojUzvanika, "godinaVjencanja": godinaVjencanja, "mjesecVjencanja": mjesecVjencanja, "danVjencanja": danVjencanja, "dodaci": dodaci, "ime": formIme, "email": formEmail, "mobitel": formMobitel, "naslov": formNaslov, "tekst": formTekst};
 
-    $.post("/planer", data,
-        function(data){
-            // console.log(data);
-            // data = JSON.parse(data);
-            // console.log(data);
+        // console.log(data);
 
-            // document.getElementById("addImage").innerHTML = data;
-            if (data == "success") {
+        $.post("/planer", data,
+            function(data){
+                // console.log(data);
+                // data = JSON.parse(data);
+                // console.log(data);
 
-            }
+                // document.getElementById("addImage").innerHTML = data;
+                if (data == "success") {
+                    $("#loadingAlert").hide();
+                    $("#successAlert").fadeIn();
 
-        });
+                    setTimeout(function () {
+                        $("#successAlert").fadeOut();
+                    }, 5000);
+                } else {
+                    $("#loadingAlert").hide();
+                    $("#error2Alert").fadeIn();
+
+                    setTimeout(function () {
+                        $("#error2Alert").fadeOut();
+                    }, 8000);
+                }
+
+            });
+    }
+
+
 });
 
 
