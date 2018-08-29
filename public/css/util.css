@@ -3587,6 +3587,10 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
             0.5px 0.5px 0 #000;
 }
 
+.noUnderline {
+    text-decoration: none !important;
+}
+
 /*[ Background Color ]
 -----------------------------------------------------------
 */

@@ -15,4 +15,8 @@
         integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
         crossorigin=""></script>
 
+
+{{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>--}}
+{{--<script src="{{asset("js/youtubebackground.js")}}"></script>--}}
+
 <script src="{{asset("js/leaflet.js")}}"></script>

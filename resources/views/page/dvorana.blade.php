@@ -2,33 +2,60 @@
 
 @section("content")
 
-    <section class="section-video parallax100" style="background-image: url(images/img/background/dvorana.jpeg);">
-        <div class="content-video t-center p-t-225 p-b-250">
-			<span class="tit2 p-l-15 p-r-15 c-whitesmoke outline">
-				Pregled svečane dvorane
-			</span>
+    {{--<section class="section-video parallax100" style="background-image: url(images/img/background/dvorana.jpeg);">--}}
+        {{--<div class="content-video t-center p-t-225 p-b-250">--}}
+			{{--<span class="tit2 p-l-15 p-r-15 c-whitesmoke outline">--}}
+				{{--Pregled svečane dvorane--}}
+			{{--</span>--}}
 
-            <!--<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">-->
-            <!---->
-            <!--</h3>-->
+            {{--<!--<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">-->--}}
+            {{--<!---->--}}
+            {{--<!--</h3>-->--}}
 
-            <div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="videoModal" data-target="#modal-video-01" id="youtubePlay">
-                <div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
-                    <i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
-                </div>
+            {{--<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="videoModal" data-target="#modal-video-01" id="youtubePlay">--}}
+                {{--<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">--}}
+                    {{--<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</section>--}}
+
+    {{--<div class="videoContainer">--}}
+        {{--<iframe class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/92k1_ByaNqg?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1" frameborder="0"></iframe>--}}
+    {{--</div>--}}
+
+    {{--<div class="video-background">--}}
+        {{--<div class="video-foreground">--}}
+            {{--<iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ" frameborder="0" allow="autoplay; fullscreen" id="dvoranaVideo"></iframe>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+    {{--<div id="vidtop-content">--}}
+        {{--<div class="vid-info">--}}
+            {{--<h1>YouTube Fullscreen Background Demo</h1>--}}
+            {{--<p>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.--}}
+            {{--<p>Original timelapse by Riccardo Rossi (ISAA), used under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Raw photos courtesy of http://eol.jsc.nasa.gov/--}}
+                {{--<a href="/500/Use-YouTube-Videos-as-Fullscreen-Web-Page-Backgrounds">Full article</a>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+    <div class="cover">
+        <div class="hi">
+            <div class="t-center p-t-225 p-b-250">
+            <span class="tit2 p-l-15 p-r-15 c-white outline noUnderline">
+            Pregled svečane dvorane
+            </span>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="tv">
+        <div class="screen mute" id="tv"></div>
+    </div>
 
 
 
 
-
-
-
-
-
-
+    <div class="moveDown"></div>
     <section class="section-event">
         <div class="wrap-slick2">
             <div class="slick2">
