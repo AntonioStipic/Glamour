@@ -1,16 +1,18 @@
 $(".slider1").css("font-size", "25px");
 $(".slider1").css("color", "red");
 
-$("#brojUzvanika").on('input', function () {
+$("#brojUzvanika").on('input', updateUzvanike);
+
+function updateUzvanike() {
 
     for (let i = 1; i < 6; i++) {
         $(".slider" + i).css("color", "black");
         $(".slider" + i).css("font-size", "20px");
     }
 
-    $(".slider" + $(this).val()).css("color", "red");
-    $(".slider" + $(this).val()).css("font-size", "25px");
-});
+    $(".slider" + $("#brojUzvanika").val()).css("color", "red");
+    $(".slider" + $("#brojUzvanika").val()).css("font-size", "25px");
+}
 
 $(".planerBlock").on("click", function () {
 
@@ -20,6 +22,19 @@ $(".planerBlock").on("click", function () {
     } else {
         $(this).addClass("planerClicked");
     }
+});
+
+$(".range-labels li").on("click", function () {
+   let val = 1;
+
+   if ($(this).hasClass("slider1")) val = 1;
+   else if ($(this).hasClass("slider2")) val = 2;
+   else if ($(this).hasClass("slider3")) val = 3;
+   else if ($(this).hasClass("slider4")) val = 4;
+   else if ($(this).hasClass("slider5")) val = 5;
+
+   $("#brojUzvanika").val(val);
+    updateUzvanike();
 });
 
 $("#clearPlaner").on("click", function () {

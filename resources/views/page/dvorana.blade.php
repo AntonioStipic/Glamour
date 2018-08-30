@@ -42,8 +42,14 @@
     <div class="cover">
         <div class="hi">
             <div class="t-center p-t-225 p-b-250">
+                <br>
             <span class="tit2 p-l-15 p-r-15 c-white outline noUnderline">
             Pregled svečane dvorane
+            </span>
+
+                <br>
+            <span id="videoLoading">
+                <img src="{{asset("images/loader.gif")}}" width="60">
             </span>
             </div>
         </div>
