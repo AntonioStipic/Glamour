@@ -59,7 +59,45 @@ class PageController extends Controller {
 
     public function blogId($id) {
 
-        echo $id;
+//        echo $id;
+
+        $data = array(
+            "title" => "Blog"
+        );
+
+        try {
+            return view("page.blog" . $id)->with($data);
+        } catch (Exception $e) {
+
+        }
+
+    }
+
+    public function admin(Request $request) {
+
+//        print_r($request->session());
+
+        $admin = $request->session()->get("admin");
+
+        print_r($admin);
+//        echo "1";
+
+        if (isset($admin)) {
+
+            $data = array(
+                "title" => "Admin"
+            );
+
+            return view("page.admin")->with($data);
+        } else {
+
+            $data = array(
+                "title" => "Login"
+            );
+
+            return view("page.adminLogin")->with($data);
+        }
+
 
     }
 
